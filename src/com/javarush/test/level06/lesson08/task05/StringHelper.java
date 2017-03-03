@@ -10,19 +10,12 @@ String multiply(String s) – возвращает строку повторен
 
 public class StringHelper
 {
-    public static void main(String[] args)
-    {
-        //System.out.print(multiply("Амиго"));
-        System.out.print(multiply("Амиго", 3));
-    }
 
     public static String multiply(String s)
     {
-
         String result = "";
-        for (int i = 0; i < 5; i++)
-        {
-            System.out.print(s);
+        for (int i =0; i < 5; i++){
+            result = result+s;
         }
         //напишите тут ваш код
         return result;
@@ -31,12 +24,10 @@ public class StringHelper
     public static String multiply(String s, int count)
     {
         String result = "";
-        for (int i = 0; i <= count; i++)
-        {
-            result = s;
-            //System.out.print(s);
+
+        for (int i = 0; i < count; i++){
+            result = result+s;
         }
-         System.out.print(result+2);
         //напишите тут ваш код
         return result;
     }
